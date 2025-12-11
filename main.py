@@ -11,7 +11,7 @@ from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 
 app = FastAPI()
-app.mount("/static", StaticFiles(directory="static"), name="static")
+
 
 async def complete_survey():
     options = Options()
